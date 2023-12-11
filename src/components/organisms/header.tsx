@@ -6,6 +6,14 @@ export const Header = () => {
   const navBarRef = useRef(null);
 
   const handlerScroll = () => {
+    const bodyScroll = window.scrollTop();
+    if (bodyScroll > 100) {
+      navBarRef.current.addClass("nav-scroll");
+      logo.attr("src", "img/logo-light.png");
+    } else {
+      navbar.removeClass("nav-scroll");
+      logo.attr("src", "img/logo.png");
+    }
     console.log(navBarRef);
   };
 
