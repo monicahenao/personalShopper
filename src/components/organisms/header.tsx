@@ -1,13 +1,27 @@
+import { useEffect, useRef } from "react";
 import { CursorPointer, Preloader } from "../atoms";
 import { MenuHeader } from "../molecules";
 
 export const Header = () => {
+  const navBarRef = useRef(null);
+
+  const handlerScroll = () => {
+    console.log(navBarRef);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handlerScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handlerScroll);
+    };
+  }, []);
   return (
     <>
       <Preloader />
       <CursorPointer />
       {/* <!-- Top Navbar --> */}
-      <header className="main-header">
+      <div className="main-header">
         <div className="header-top">
           <div className="container">
             <div className="top-outer clearfix">
@@ -30,17 +44,17 @@ export const Header = () => {
               <div className="top-right clearfix">
                 <ul className="links clearfix">
                   <li>
-                    <span className="ti-time"></span>Horario : Lunes - Sábado
-                    08:00 - 18:00
+                    <span className="footer-contact-mail"></span>
+                    monicahenaops@gmail.com
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </header>
+      </div>
       {/* <!-- Navbar --> */}
-      <nav className="navbar navbar-expand-lg">
+      <nav ref={navBarRef} className="navbar navbar-expand-lg nav-scroll">
         <div className="container">
           {/* <!-- Logo --> */}
           <div className="logo-wrapper">
