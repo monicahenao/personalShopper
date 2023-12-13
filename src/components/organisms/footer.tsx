@@ -1,6 +1,5 @@
-import { ContactFooter } from "../atoms";
-import { ServicesFooter } from "../atoms/servicesFooter";
-import { SuscribeFooter } from "../atoms/suscribeFooter";
+import { ContactFooter,FooterBottom,ServicesFooter, SuscribeFooter } from "../atoms";
+
 
 export const Footer = () => {
   return (
@@ -21,6 +20,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <FooterBottom/>
     </footer>
   );
 };

@@ -1,3 +1,5 @@
+import { Foto1, Foto2 } from "../../assets";
+
 export const AboutHome = () => {
   return (
     <section className="about section-padding" data-scroll-index="1">
@@ -21,8 +23,8 @@ export const AboutHome = () => {
               se adapten a nuestra personalidad puede resultar abrumador. En
               este escenario, contar con un personal shopper emerge como una
               valiosa herramienta para explorar y potenciar nuestro estilo
-              individual. Yo no solo te ayudar a elegir la ropa; voy a
-              descubrir tu identidad a través de la moda.
+              individual. Yo no solo te ayudar a elegir la ropa; voy a descubrir
+              tu identidad a través de la moda.
             </p>
             <ul className="about-list list-unstyled mb-20">
               <li>
@@ -54,13 +56,21 @@ export const AboutHome = () => {
           <div className="col-md-6 animate-box" data-animate-effect="fadeInUp">
             <div className="row img-twice position-relative h-100">
               <div className="col-6 animate-box" data-animate-effect="fadeInUp">
-                <img className="img-fluid" src="src/assets/img/foto1.jpg" alt="" />
+                <img
+                  className="img-fluid"
+                  src={Foto1}
+                  alt=""
+                />
               </div>
               <div
                 className="col-6 align-self-end animate-box"
                 data-animate-effect="fadeInUp"
               >
-                <img className="img-fluid" src="src/assets/img/foto2.jpg" alt="" />
+                <img
+                  className="img-fluid"
+                  src={Foto2}
+                  alt=""
+                />
               </div>
             </div>
           </div>

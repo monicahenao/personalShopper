@@ -2,13 +2,7 @@ import {
   AboutHome,
   HeaderHome,
   ServicesHome,
-  ServicesBox,
-  VideoHome,
-  PricingPlansHome,
-  Testimonials,
-  StyleGallery,
-  BlogHome,
-  ClientsHome,
+  ServicesBox
 } from "../components/molecules";
 import { AppointmentForm } from "../components/organisms";
 
@@ -24,19 +18,13 @@ export const Home = () => {
       {/* <!-- Services Box --> */}
       <ServicesBox />
       {/* <!-- Video --> */}
-      <VideoHome />
       {/* <!-- Pricing --> */}
-      <PricingPlansHome />
       {/* <!-- Testimonials --> */}
-      <Testimonials />
       {/* <!-- Style Gallery --> */}
-      <StyleGallery />
       {/* <!-- Blog --> */}
-      <BlogHome />
       {/* <!-- Appointment Form --> */}
       <AppointmentForm />
       {/* <!-- Clients --> */}
-      <ClientsHome />
     </>
   );
 };

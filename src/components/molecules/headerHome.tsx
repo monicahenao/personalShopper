@@ -23,7 +23,7 @@ export const HeaderHome = () => {
                   <h6>Monica Henao - Personal Shopper</h6>
                   <h1>Personal Shopping</h1>
                   <a href="#" className="button-4">
-                    trabaja con Monica<span></span>
+                    Contáctame<span></span>
                   </a>
                 </div>
               </div>

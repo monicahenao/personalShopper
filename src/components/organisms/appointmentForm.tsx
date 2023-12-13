@@ -3,7 +3,7 @@ export const AppointmentForm = () => {
     <section className="appointment">
       <div
         className="background bg-img bg-fixed section-padding"
-        data-background="img/slider/3.jpg"
+        data-background="src/assets/img/foto8.jpg"
         data-overlay-dark="4"
       >
         <div className="container">

@@ -1,20 +1,26 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CursorPointer, Preloader } from "../atoms";
 import { MenuHeader } from "../molecules";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare let window: any;
+
 export const Header = () => {
-  const navBarRef = useRef(null);
+  const navBarRef = useRef<HTMLElement>(null);
+
+  const [logo, setLogo] = useState("src/assets/img/logo.png");
 
   const handlerScroll = () => {
-    const bodyScroll = window.scrollTop();
+    const bodyScroll = window.pageYOffset;
     if (bodyScroll > 100) {
-      navBarRef.current.addClass("nav-scroll");
-      logo.attr("src", "img/logo-light.png");
+      (navBarRef.current as unknown as any).className =
+        "navbar navbar-expand-lg nav-scroll";
+      setLogo("src/assets/img/logo-light.png");
     } else {
-      navbar.removeClass("nav-scroll");
-      logo.attr("src", "img/logo.png");
+      (navBarRef.current as unknown as any).className =
+        "navbar navbar-expand-lg";
+      setLogo("src/assets/img/logo.png");
     }
-    console.log(navBarRef);
   };
 
   useEffect(() => {
@@ -36,13 +42,13 @@ export const Header = () => {
               <div className="top-left">
                 <ul className="links clearfix">
                   <li>
-                    <a href="#0">
+                    <a>
                       <span className="flaticon-maps-and-flags"></span>Envigado
                       - Antioquia
                     </a>
                   </li>
                   <li>
-                    <a href="tel:+573014854669">
+                    <a>
                       <span className="flaticon-phone-call"></span>+57
                       3014854669
                     </a>
@@ -62,12 +68,12 @@ export const Header = () => {
         </div>
       </div>
       {/* <!-- Navbar --> */}
-      <nav ref={navBarRef} className="navbar navbar-expand-lg nav-scroll">
+      <nav ref={navBarRef} className="navbar navbar-expand-lg">
         <div className="container">
           {/* <!-- Logo --> */}
           <div className="logo-wrapper">
             <a className="logo" href="index.html">
-              <img src="src/assets/img/logo.png" className="logo-img" alt="" />
+              <img src={logo} className="logo-img" alt="" />
             </a>
           </div>
           {/* <!-- Button --> */}
