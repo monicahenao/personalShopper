@@ -16,7 +16,7 @@ export const ServicesFooter = () => {
           <a href={`/services`}>Asesoría para hombres</a>
         </li>
         <li>
-          <a href={`/services`}>Ocaciones Especiales</a>
+          <a href={`/services`}>Ocasiones Especiales</a>
         </li>
       </ul>
     </div>

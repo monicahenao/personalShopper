@@ -1,4 +1,4 @@
-export const StyleGallery = () => {
+export const GalleryHome = () => {
   return (
     <section className="section-padding bg-lightbrown">
       <div className="container">

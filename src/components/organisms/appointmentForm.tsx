@@ -1,9 +1,11 @@
+import { Image8 } from "../../assets";
+
 export const AppointmentForm = () => {
   return (
     <section className="appointment">
       <div
         className="background bg-img bg-fixed section-padding"
-        data-background="src/assets/img/foto8.jpg"
+        data-background={Image8}
         data-overlay-dark="4"
       >
         <div className="container">

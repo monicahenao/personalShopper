@@ -1,4 +1,5 @@
-import { Foto3, Foto4, Foto5, Foto6, Foto7 } from "../../assets";
+import { Image3, Image4, Image5, Image6, Image7 } from "../../assets";
+
 
 export const ServicesHome = () => {
   return (
@@ -20,7 +21,7 @@ export const ServicesHome = () => {
               <div className="item right">
                 <figure>
                   <img
-                    src={Foto3}
+                    src={Image3}
                     alt=""
                     className="img-fluid"
                   />
@@ -42,7 +43,7 @@ export const ServicesHome = () => {
               <div className="item right">
                 <figure>
                   <img
-                    src={Foto4}
+                    src={Image4}
                     alt=""
                     className="img-fluid"
                   />
@@ -63,7 +64,7 @@ export const ServicesHome = () => {
               <div className="item right">
                 <figure>
                   <img
-                    src={Foto5}
+                    src={Image5}
                     alt=""
                     className="img-fluid"
                   />
@@ -84,7 +85,7 @@ export const ServicesHome = () => {
               <div className="item right">
                 <figure>
                   <img
-                    src={Foto6}
+                    src={Image6}
                     alt=""
                     className="img-fluid"
                   />
@@ -106,7 +107,7 @@ export const ServicesHome = () => {
               <div className="item right">
                 <figure>
                   <img
-                    src={Foto7}
+                    src={Image7}
                     alt=""
                     className="img-fluid"
                   />

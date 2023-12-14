@@ -1,4 +1,5 @@
-import { Foto1, Foto2 } from "../../assets";
+import { Image1, Image2 } from "../../assets";
+
 
 export const AboutHome = () => {
   return (
@@ -58,7 +59,7 @@ export const AboutHome = () => {
               <div className="col-6 animate-box" data-animate-effect="fadeInUp">
                 <img
                   className="img-fluid"
-                  src={Foto1}
+                  src={Image1}
                   alt=""
                 />
               </div>
@@ -68,7 +69,7 @@ export const AboutHome = () => {
               >
                 <img
                   className="img-fluid"
-                  src={Foto2}
+                  src={Image2}
                   alt=""
                 />
               </div>

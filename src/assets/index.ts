@@ -1,27 +1,27 @@
 import FavIcon from "./img/favicon.png";
 import Logo from "./img/logo.png";
 import LogoLight from "./img/logo-light.png";
-import Foto1 from "./img/foto1.jpg";
-import Foto2 from "./img/foto2.jpg";
-import Foto3 from "./img/foto3.jpg";
-import Foto4 from "./img/foto4.jpg";
-import Foto5 from "./img/foto5.jpg";
-import Foto6 from "./img/foto6.jpg";
-import Foto7 from "./img/foto7.jpg";
-import Foto8 from "./img/foto8.jpg";
-import Foto9 from "./img/foto9.jpg";
+import Image1 from "./img/image1.jpg";
+import Image2 from "./img/image2.jpg";
+import Image3 from "./img/image3.jpg";
+import Image4 from "./img/image4.jpg";
+import Image5 from "./img/image5.jpg";
+import Image6 from "./img/image6.jpg";
+import Image7 from "./img/image7.jpg";
+import Image8 from "./img/image8.jpg";
+import Image9 from "./img/image9.jpg";
 
 export {
   FavIcon,
   Logo,
   LogoLight,
-  Foto1,
-  Foto2,
-  Foto3,
-  Foto4,
-  Foto5,
-  Foto6,
-  Foto7,
-  Foto8,
-  Foto9,
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
 };

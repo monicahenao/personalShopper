@@ -7,7 +7,10 @@ export * from './videoHome';
 export * from './pricingPlansHome';
 export * from './pricingBox';
 export * from './testimonials';
-export * from './styleGallery';
+export * from './galleryHome';
 export * from './blogHome';
 export * from './clientsHome';
+export * from './headerHome';
+export * from './menuHeader';
+
 
