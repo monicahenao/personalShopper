@@ -22,7 +22,7 @@ export const HeaderHome = () => {
                 <div className="v-middle">
                   <h6>Monica Henao - Personal Shopper</h6>
                   <h1>Personal Shopping</h1>
-                  <a href="#" className="button-4">
+                  <a href={`/contact`} className="button-4">
                     Contáctame<span></span>
                   </a>
                 </div>

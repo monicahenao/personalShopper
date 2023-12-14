@@ -48,8 +48,8 @@ export const MyServices = () => {
                     preferencias, tu cuerpo y tu personalidad, y selecciona
                     prendas que resalten lo mejor de ti. La ropa no solo se
                     trata de seguir tendencias, sino de expresar quién eres.
-                  </p>{" "}
-                  <a href="services-page.html" className="button-1">
+                  </p>
+                  <a href={`/contact`} className="button-1">
                     Contáctame<span></span>
                   </a>
                 </div>
@@ -75,7 +75,7 @@ export const MyServices = () => {
                     favoritos y aquellas prendas que ya no cumplen con las
                     expectativas del cliente.
                   </p>
-                  <a href="services-page.html" className="button-1">
+                  <a href={`/contact`} className="button-1">
                     Contáctame<span></span>
                   </a>
                 </div>
@@ -101,7 +101,7 @@ export const MyServices = () => {
                     consigo prendas versátiles y apropiadas para todas las
                     ocasiones previstas.
                   </p>
-                  <a href="services-page.html" className="button-1">
+                  <a href={`/contact`} className="button-1">
                     Contáctame<span></span>
                   </a>
                 </div>
@@ -128,7 +128,7 @@ export const MyServices = () => {
                     y accesorios que se adapten a tu estilo personal,
                     necesidades y ocasiones específicas.
                   </p>
-                  <a href="services-page.html" className="button-1">
+                  <a href={`/contact`} className="button-1">
                     Contáctame<span></span>
                   </a>
                 </div>
@@ -155,7 +155,7 @@ export const MyServices = () => {
                     y detallado para garantizar que tu luzcas de la mejor manera
                     posible en un evento particular.
                   </p>
-                  <a href="services-page.html" className="button-1">
+                  <a href={`/contact`} className="button-1">
                     Contáctame<span></span>
                   </a>
                 </div>

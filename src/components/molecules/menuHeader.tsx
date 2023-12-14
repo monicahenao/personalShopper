@@ -25,19 +25,19 @@ export const MenuHeader = () => {
           </a>
           <ul className="dropdown-menu">
             <li>
-              <a href="gallery.html" className="dropdown-item">
+              <a href={`/stylegallery`} className="dropdown-item">
                 <span>Galería de Estilos</span>
               </a>
             </li>
             <li>
-              <a href="faq.html" className="dropdown-item">
+              <a href={`/faq`} className="dropdown-item">
                 <span>Preguntas frecuentes</span>
               </a>
             </li>
           </ul>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="contact.html">
+          <a className="nav-link" href={`/contact`}>
             Contacto
           </a>
         </li>
