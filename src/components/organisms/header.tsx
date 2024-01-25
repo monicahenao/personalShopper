@@ -72,7 +72,7 @@ export const Header = () => {
         <div className="container">
           {/* <!-- Logo --> */}
           <div className="logo-wrapper">
-            <a className="logo" href="index.html">
+            <a className="logo" href={`/`}>
               <img src={logo} className="logo-img" alt="" />
             </a>
           </div>

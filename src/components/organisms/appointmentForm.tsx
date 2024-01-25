@@ -1,6 +1,25 @@
+import { useState } from "react";
 import { Image8 } from "../../assets";
 
 export const AppointmentForm = () => {
+  const [formContact, setFormContact] = useState({
+    author: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handlerChange = (event: {
+    target: { value: string | number; name: string };
+  }) => {
+    setFormContact({ ...formContact, [event.target.name]: event.target.value });
+  };
+
+  const handlerSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    console.log(formContact);
+  };
+
   return (
     <section className="appointment">
       <div
@@ -39,13 +58,16 @@ export const AppointmentForm = () => {
                     <div className="row">
                       <div className="col-md-6">
                         <div className="input1_wrapper">
-                          <label>Nombre</label>
+                          <label htmlFor="author">Nombre</label>
                           <div className="input2_inner">
                             <input
                               type="text"
+                              name="author"
                               className="form-control input"
                               placeholder="Name"
                               required
+                              onChange={handlerChange}
+                              value={formContact.author}
                             />
                           </div>
                         </div>
@@ -56,22 +78,28 @@ export const AppointmentForm = () => {
                           <div className="input2_inner">
                             <input
                               type="text"
+                              name="phone"
                               className="form-control input"
                               placeholder="Phone"
                               required
+                              onChange={handlerChange}
+                              value={formContact.phone}
                             />
                           </div>
                         </div>
                       </div>
                       <div className="col-md-6">
                         <div className="input1_wrapper">
-                          <label>e-Mail</label>
+                          <label htmlFor="email">e-Mail</label>
                           <div className="input2_inner">
                             <input
                               type="email"
+                              name="email"
                               className="form-control input"
                               placeholder="e-Mail"
                               required
+                              onChange={handlerChange}
+                              value={formContact.email}
                             />
                           </div>
                         </div>
@@ -87,6 +115,8 @@ export const AppointmentForm = () => {
                               rows={3}
                               placeholder="Message"
                               required
+                              onChange={handlerChange}
+                              value={formContact.message}
                             ></textarea>
                           </div>
                         </div>
@@ -95,6 +125,7 @@ export const AppointmentForm = () => {
                         <button
                           type="submit"
                           className="btn-form1-submit mt-15"
+                          onClick={handlerSubmit}
                         >
                           ENVIAR
                         </button>
